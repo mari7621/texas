@@ -1,6 +1,10 @@
 $(function ($) {
   $(".firstview").bgSwitcher({
-    images: ["images/texasimage.jpeg", "images/texasimage2.jpeg"],
+    images: [
+      "images/texasimage.jpg",
+      "images/texasimage2.jpg",
+      "images/texasimage3.jpg",
+    ],
     interval: 7000,
     loop: true,
   });

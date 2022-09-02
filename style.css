@@ -130,6 +130,13 @@ letter-spacing: 0.2rem;
     
 }
 
+.texastext{
+  position: absolute;
+  width: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 .scrolldown4{
@@ -340,8 +347,9 @@ line-height: 150%;
 
   .map{
     text-align: center;
-    margin-top: 170px;
+    margin-top: 200px;
     padding-top: 30px;
+    padding-bottom: 500px;
     background-color: #efeaff;
   }
 
@@ -352,8 +360,26 @@ line-height: 150%;
     margin-bottom: 50px;
     letter-spacing: 0.1rem;
   }
+  .map p{
+    margin-top: 20px;
+font-family: 'Shippori Mincho B1', serif;
+font-size: 20px;
+letter-spacing: 0.1rem;
+line-height: 150%;
+margin-bottom: 50px;
+  }
+
+
+
+
+
+
+
 
   @media screen and (max-width:2050px){
+   .texas p{
+    font-size: 25px;
+   }
     .about{
     text-align: center;
 
@@ -380,3 +406,201 @@ line-height: 150%;
       height: 500px;
     }
   }
+
+
+
+
+  @media screen and (max-width:1400px){
+    .texas p {
+      font-size: 20px;
+  }
+  header {
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    background-image: linear-gradient(to right, #f4f9fe, #ffffff, #e9eaf4);
+  
+}
+    .galveston img, .courps img, .sanantonio img{
+      width: 300px;
+      height: 400px;
+    } 
+
+    .contents p {
+      margin-top: 20px;
+      font-family: 'Shippori Mincho B1', serif;
+      font-size: 15px;
+      letter-spacing: 0.1rem;
+      line-height: 150%;
+  }
+
+  .contents h4 {
+    font-size: 35px;
+
+}
+.about img {
+  width: 800px;
+  height: 700px;
+}
+}
+
+
+
+
+
+@media screen and (max-width:960px){
+header{
+  padding: 0px 10px;
+}
+header p{
+  font-size: 25px;
+}
+header a{
+  font-size: 22px;
+}
+header ul{
+  justify-content: space-around;
+}
+  .galveston img, .courps img, .sanantonio img {
+      width: 200px;
+      height: 300px;
+  }
+  .contents h4 {
+    font-size: 27px;}
+
+    .contents h5 {
+      margin-top: 10px;
+      font-size: 22px;
+
+  }
+  .contents p {
+    margin-top: 20px;
+
+    font-size: 10px;
+ 
+}
+.texas p {
+  font-size: 15px;
+  padding: 0px 15px;
+}
+.texas a{
+  padding: 10px 80px;
+  font-size: 15px;
+}
+.texas img {
+  margin-top: 50px;
+  width: 280px;
+  height: auto;
+  border-radius: 20px;
+}
+.place h3 {
+
+  font-size: 50px;
+}
+.map h4 {
+  font-size: 50px;
+
+}
+.map p {
+  
+  font-size: 15px;
+ 
+}
+.about h2 {
+ 
+  font-size: 25px;
+
+}
+.about p{
+  font-size: 18px;
+}
+.about img{
+  width: 600px;
+  height: 500px;
+}
+}
+
+
+@media screen and (max-width:540px){
+  .texastext {
+
+    width: 350px;
+    
+}
+header{
+height: 50px;
+line-height: 50px;
+}
+header p {
+  font-size: 15px;
+}
+header a {
+  font-size: 14px;
+}
+  .about img {
+    width: 350px;
+    height: 300px;
+}
+.about h1{
+  font-size: 30px;
+}
+.about h2{
+  font-size: 18px;
+  margin-top: 25px;
+
+}
+.about p{
+  font-size: 13px;
+  margin-top: 20px;
+}
+.galveston img, .courps img, .sanantonio img {
+  width: 300px;
+  height: 300px;
+}
+.galveston, .courps, .sanantonio{
+  margin: 30px 0px;
+}
+.images {
+  display: block;
+ 
+  margin-top: 50px;
+}
+.texas h1{
+  font-size: 30px;
+}
+.texas p{
+  font-size: 13px;
+}
+.park, .city {
+
+  margin: 25px;
+
+}
+.contents{
+  display: flex;
+  flex-direction: column;
+}
+.place h3 {
+  font-size: 30px;
+}
+.map h4 {
+  font-size: 30px;
+}
+.map p {
+  font-size: 10px;
+  padding: 5px;
+}
+iframe{
+  width: 350px;
+  height: 520px;
+}
+#splash_logo img {
+  width:340px;
+}
+
+}
