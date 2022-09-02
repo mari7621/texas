@@ -370,13 +370,21 @@ margin-bottom: 50px;
   }
 
 
+  footer{
+    height: 80px;
+    background-color: #ffffff;
+    line-height: 80px;
+    font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-family:  'Montserrat', sans-serif;
+  }
 
 
 
 
 
-
-  @media screen and (max-width:2050px){
+  @media screen and (max-width:2160px){
    .texas p{
     font-size: 25px;
    }
@@ -602,5 +610,14 @@ iframe{
 #splash_logo img {
   width:340px;
 }
+footer{
+  height: 50px;
+  background-color: #9682bb;
+  line-height: 50px;
+  font-size: 14px;
+text-align: center;
+letter-spacing: 2px;
+}
+
 
 }
