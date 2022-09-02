@@ -340,5 +340,43 @@ line-height: 150%;
 
   .map{
     text-align: center;
-    padding-top: 170px;
+    margin-top: 170px;
+    padding-top: 30px;
+    background-color: #efeaff;
+  }
+
+  .map h4{
+    font-size: 70px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+    letter-spacing: 0.1rem;
+  }
+
+  @media screen and (max-width:1900px){
+    .about{
+    text-align: center;
+
+    }
+    .text1{
+      text-align: center;
+    }
+    .about2{
+      
+      padding-top: 30px;
+      display: block;
+      background-color: #e7ebf7;
+    }
+    .about h1{
+      background-image: linear-gradient(to right, #da9284, #afa8c7, #9eb6c5);
+	background-repeat: no-repeat;
+	background-size: 100% 30%;
+	background-position: bottom;
+	transition: all 0.25s ease-in;
+  display: inline-block;
+    }
+    .galveston img, .courps img, .sanantonio img{
+      width: 400px;
+      height: 500px;
+    }
   }
