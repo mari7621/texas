@@ -353,7 +353,7 @@ line-height: 150%;
     letter-spacing: 0.1rem;
   }
 
-  @media screen and (max-width:2000px){
+  @media screen and (max-width:2050px){
     .about{
     text-align: center;
 
