@@ -1,0 +1,344 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background: white;
+  background-size: cover;
+}
+
+header {
+  height: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 180px;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  background-image: linear-gradient(to right, #f4f9fe, #ffffff, #e9eaf4);
+  z-index: 2;
+  opacity: 0.95;
+  /* border-bottom: 3px solid rgb(180, 157, 195); */
+}
+
+header p {
+  font-size: 35px;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(45deg, #da9284 16%, #947edb 57%, #7fb2d2 90%);
+  background: -webkit-linear-gradient(
+    45deg,
+    #da9284 16%,
+    #947edb 57%,
+    #7fb2d2 90%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientEffect 2.5s infinite alternate;
+}
+
+@keyframes gradientEffect {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+header ul {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+header a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+header a {
+  position: relative;
+
+  /* display: inline-block; */
+  /* margin-bottom: 20px; */
+  padding-bottom: 6px;
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding-left: 3px;
+  color: black;
+  padding-left: 3px;
+}
+
+header a:hover::after {
+  width: 100%;
+}
+
+header a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(to right, #da9284, #afa8c7, #9eb6c5);
+  transition: all 0.35s ease 0s;
+}
+.firstview h7 {
+font-size: 70px;
+display: inline-block;
+padding-top:400px;
+font-weight: 100;
+font-family: 'Shippori Mincho B1', serif;
+color: white;
+position: absolute;
+letter-spacing: 0.2rem;
+}
+
+.text{
+  vertical-align: middle;
+}
+.firstview {
+  
+  /* text-align: center; */
+  background-image: url(images/texasimage.jpeg);
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  height: 900px;
+  background-attachment: fixed; /*--背景画像の固定--*/
+    background-repeat: no-repeat; /*--背景画像の繰り返し--*/
+    background-position: center center;/*--背景画像の位置--*/
+    height: 400px;　/*--スクロールをさせるため 高さ指定--*/
+    z-index: 1;
+    
+}
+
+
+
+.scrolldown4{
+  /*描画位置※位置は適宜調整してください*/
+position:absolute;
+bottom:1%;
+right:50%;
+  /*矢印の動き1秒かけて永遠にループ*/
+animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
+}
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+  /*描画位置*/
+position: absolute;
+left:-20px;
+bottom:10px;
+  /*テキストの形状*/
+color: #eee;
+font-size: 0.9rem;
+letter-spacing: 0.05em;
+/*縦書き設定*/
+-ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+  /*矢印の形状*/
+  width: 1px;
+  height: 20px;
+  background: #eee;
+  transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+content:"";
+  /*描画位置*/
+position: absolute;
+bottom:0;
+right:0;
+  /*矢印の形状*/
+width:1px;
+height: 50px;
+background:#eee;
+}
+
+.texas{
+  text-align: center;
+  clear: both;
+}
+
+.texas h1{
+margin-top: 50px;
+font-family:  'Montserrat', sans-serif;
+font-weight: 500;
+letter-spacing: 0.2rem;
+font-size: 50px;
+}
+
+.texas p{
+  margin-top: 80px;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 30px;
+  line-height: 340%;
+  letter-spacing: 0.1rem;
+  margin-bottom: 50px;
+}
+
+.texas img{
+  margin-top: 50px;
+  width: 30%;
+  border-radius: 20px;
+}
+
+.images{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.park ,.city{
+  height: 530px;
+  margin:50px;
+  width: 700px;
+}
+
+.texas a{
+text-decoration: none;
+padding: 20px 100px;
+border:  solid 2px black;
+color: black;
+border-radius: 100vh;
+font-size: 20px;
+letter-spacing: 0.1rem N;
+font-family:  'Montserrat', sans-serif;
+}
+
+.texas a:hover{
+background-color: black;
+color: white;
+transition: background-color 0.5s;
+} 
+
+.mapp{
+  margin-top: 100px;
+}
+
+.about{
+  margin-top: 280px;
+}
+.about2{
+  margin-top: 200px;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.text1{
+  margin-top: 20px;
+  padding: 0 10.33333% 0 10.33333%;
+}
+.about h1{
+  margin-top: 50px;
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  font-size: 50px;
+  }
+
+  .about h2{
+    font-family: 'Shippori Mincho B1', serif;
+    ;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    font-size: 35px;
+    margin-top: 30px;
+  }
+
+  .about p{
+    margin-top: 50px;
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 23px;
+    line-height: 170%;
+    letter-spacing: 0.1rem;
+    margin-bottom: 50px;
+  }
+  
+  .about img{
+    width: 1000px;
+    height: 800px;
+  }
+
+  .place{
+text-align: center;
+margin-top: 250px;
+  }
+
+  .place h3{
+    color:rgba(0,0,0,.0);
+    -webkit-text-stroke: 1.5px black;
+    font-family: 'Shippori Mincho B1', serif;
+font-size: 70px;
+  }
+
+  .contents{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .galveston img ,.courps img ,.sanantonio img{
+width: 600px;
+height: 700px;
+  }
+  
+  .contents h4{
+    font-size: 40px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .contents h5{
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Shippori Mincho B1', serif;
+font-weight: 200;
+  }
+  .contents p{
+margin-top: 20px;
+font-family: 'Shippori Mincho B1', serif;
+font-size: 20px;
+letter-spacing: 0.1rem;
+line-height: 150%;
+  }
+
+  .map{
+    text-align: center;
+    padding-top: 170px;
+  }
