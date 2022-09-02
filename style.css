@@ -290,7 +290,7 @@ transition: background-color 0.5s;
   }
   
   .about img{
-    width: 1000px;
+    width: 900px;
     height: 800px;
   }
 
@@ -353,7 +353,7 @@ line-height: 150%;
     letter-spacing: 0.1rem;
   }
 
-  @media screen and (max-width:1900px){
+  @media screen and (max-width:2000px){
     .about{
     text-align: center;
 
