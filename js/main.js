@@ -10,7 +10,7 @@ $(function ($) {
   });
 
   $(window).scroll(function () {
-    var targetElement = $(".profile-text").offset().top;
+    var targetElement = $(".texas").offset().top;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll > targetElement - windowHeight + 200) {
