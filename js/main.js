@@ -5,7 +5,7 @@ $(function ($) {
       "images/texasimage2.jpg",
       "images/texasimage3.jpg",
     ],
-    interval: 7000,
+    interval: 6000,
     loop: true,
   });
 
