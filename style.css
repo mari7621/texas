@@ -407,7 +407,9 @@ margin-bottom: 50px;
   font-family:  'Montserrat', sans-serif;
   }
 
-
+  span {
+    font-weight: bold;
+  }
 
 
 
